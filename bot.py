@@ -19,7 +19,7 @@ Qoidalar:
 """
 
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+logger = logging.getLogger(name)
 conversations = {}
 MAX_HISTORY = 20
 
@@ -77,4 +77,3 @@ async def main():
 
 if name == "main":
     asyncio.run(main())
-if __name__ == "__main__"
