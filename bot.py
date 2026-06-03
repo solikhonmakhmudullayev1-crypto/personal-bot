@@ -77,4 +77,4 @@ async def main():
 
 if name == "main":
     asyncio.run(main())
-if name =="__main__"
+if __name__ =="__main__"
