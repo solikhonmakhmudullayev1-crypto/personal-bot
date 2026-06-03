@@ -6,8 +6,8 @@ from aiogram.types import Message
 from aiogram.filters import CommandStart, Command
 from aiogram.fsm.storage.memory import MemoryStorage
 
-BOT_TOKEN = "8895792522:AAG-wVs_i7A6LuIskVBbNf_aFZEdjeKToIk"
-ANTHROPIC_API_KEY = "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"
+BOT_TOKEN = "8864509835:AAEmAw38z8L5R0Zf2b-b3xiS_nIOMj2UuvE"
+ANTHROPIC_API_KEY = "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"
 
 SYSTEM_PROMPT = """Sen aqlli va samimiy shaxsiy AI yordamchisisan.
 
