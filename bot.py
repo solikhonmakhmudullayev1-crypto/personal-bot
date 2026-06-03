@@ -7,7 +7,7 @@ from aiogram.filters import CommandStart, Command
 from aiogram.fsm.storage.memory import MemoryStorage
 
 BOT_TOKEN = "8895792522:AAG-wVs_i7A6LuIskVBbNf_aFZEdjeKToIk"
-ANTHROPIC_API_KEY = "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"
+ANTHROPIC_API_KEY = "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"
 
 SYSTEM_PROMPT = """Sen aqlli va samimiy shaxsiy AI yordamchisisan.
 
@@ -19,7 +19,6 @@ Qoidalar:
 """
 
 logging.basicConfig(level=logging.INFO)
-logging.getLogger(__name__)
 conversations = {}
 MAX_HISTORY = 20
 
@@ -53,7 +52,7 @@ async def ask_claude(user_id: int, user_message: str) -> str:
             conversations[user_id].append({"role": "assistant", "content": reply})
             return reply
     except Exception as e:
-        logger.error(f"Claude API xato: {e}")
+        print(f"Claude API xato: {e}")
         return "Uzr, hozir javob bera olmayapman. Biroz kutib qayta yozing."
 
 @dp.message(CommandStart())
