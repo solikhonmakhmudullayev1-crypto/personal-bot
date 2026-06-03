@@ -77,3 +77,4 @@ async def main():
 
 if name == "main":
     asyncio.run(main())
+if name =="main"
