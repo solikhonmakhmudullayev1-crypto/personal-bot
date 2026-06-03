@@ -19,7 +19,7 @@ Qoidalar:
 """
 
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+logging.getLogger(__name__)
 conversations = {}
 MAX_HISTORY = 20
 
@@ -75,5 +75,5 @@ async def handle_message(message: Message):
 async def main():
     await dp.start_polling(bot)
 
-if __name__ == "__main__":
+if __name__ == "__main__"
     asyncio.run(main())
